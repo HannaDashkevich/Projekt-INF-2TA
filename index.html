@@ -1,44 +1,257 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-   <title>Strona główna</title> 
-    <meta charset="UTF-8">
 
-    <style>
-      * {
-        margin: 0;
-      }
-      .bg-green {
-        background-color: #6ab926;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-        font-align:sans-serif;
-        font-size: 10px;
-      }
-      
-      #info {
-        position: fixed;
-        top:0;
-        left: 0;
-        z-index: 9;
-        width: 100%;
-      }
-      body {
-        min-height: 200vh;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div id="info" class="bg-green">eerdsereaaaaaaaaaaalizagdsrefdse</div>
-    </header>
-    <main>
-      
-    </main>
+	<head>
+		<title>Strona główna</title>
+		<meta charset="UTF-8">
+		
+		<style>
+		
 
-    <footer>
-      
-    </footer>
-  </body>
+img {
+  vertical-align: middle;
+}
+
+.container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+		
+		
+			* {
+				margin: 0;
+			}
+		
+			.bg-green {
+				background-color: #6ab926;
+				color: #fff;
+				padding: 10px;
+				text-align: center;
+				font-family: sans-serif;
+				font-size: 10px;
+			}
+			
+			#info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100vw;
+    min-height: 25px;
+}
+			
+#nav {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	padding: 20px;
+	column-gap: 20px;
+	overflow-x: auto;
+}
+
+#nav > div {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    column-gap: 20px;
+}
+			
+			body {
+				min-height: 200vh;
+			}
+		</style>
+	</head>
+	
+	<body>
+	
+		<header>
+			<div id="info" class="bg-green"> vast expanses of water stretching from one piece of land to another<strong></strong></div>
+			
+			<div id="nav">
+			  <div>
+			    <div>
+			      <a href="tel:693610390">693610390</a>
+			    </div>
+			    <div>
+			      <a href="mailto:mail@gmail.com">mail@gmail.com</a>
+			    </div>
+			  </div>
+			  <div>
+			    <div>
+			      <a href="https://www.google.pl/" target="_blank">Google</a>
+			    </div>
+				<div>
+			      <a href="https://synergia.librus.pl/interfejs_lekcyjny" target="_blank">Librus</a>
+			    </div>
+			  </div>
+			</div>
+			
+			
+			<div id="main-slider">
+			  <h2 style="text-align:center"> Gallery</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 5</div>
+    <img src="https://cdn.pixabay.com/photo/2016/12/14/04/13/wave-1905610_1280.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 5</div>
+    <img src="https://cdn.pixabay.com/photo/2019/11/19/02/05/seascape-4636264_1280.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 5</div>
+    <img src="https://cdn.pixabay.com/photo/2014/07/05/00/40/waves-384385_1280.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 5</div>
+    <img src="https://cdn.pixabay.com/photo/2016/11/22/23/12/beach-1851101_1280.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 5</div>
+    <img src="https://cdn.pixabay.com/photo/2021/08/08/10/34/ocean-6530523_1280.jpg" style="width:100%">
+  </div>
+    
+
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://cdn.pixabay.com/photo/2016/12/14/04/13/wave-1905610_1280.jpg" style="width:100%" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="https://cdn.pixabay.com/photo/2019/11/19/02/05/seascape-4636264_1280.jpg" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="https://cdn.pixabay.com/photo/2014/07/05/00/40/waves-384385_1280.jpg" style="width:100%" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://cdn.pixabay.com/photo/2016/11/22/23/12/beach-1851101_1280.jpg" style="width:100%" onclick="currentSlide(4)">
+    </div>
+    <div class="column">
+      <img class="https://cdn.pixabay.com/photo/2021/08/08/10/34/ocean-6530523_1280.jpg" style="width:100%" onclick="currentSlide(5)">
+    </div>    
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+			</div>
+		</header>
+		
+		<footer>
+		</footer>
+	
+	</body>
+
 </html>
